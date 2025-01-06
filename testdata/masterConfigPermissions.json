@@ -94,6 +94,26 @@
         },
         "title": "appE"
     },
+    "appF": {
+      "top_level": "someotherstuff",
+      "routes": "fakeroutes",
+      "frontend": {
+          "sub_apps": [
+              {
+                  "id": "not_visible"
+              }
+          ]},
+      "title": "appD"
+    },
+    "appG": {
+        "top_level": "hue",
+        "routes": "fakeroutes",
+        "permissions": {
+            "method": "hasPermissions",
+            "args": [ ["something:terrible:happened"] ]
+        },
+        "title": "appG"
+    },
     "insights": {
         "frontend": {
             "title": "Bla"
@@ -108,7 +128,8 @@
             "title": "Bla"
         },
         "permissions": {
-            "method": "isEntitled"
+            "method": "isEntitled",
+            "args": ["something"]
         },
         "title": "appF"
     }
